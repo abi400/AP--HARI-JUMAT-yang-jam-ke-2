@@ -1,0 +1,31 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	string nama_mahasiswa;
+	int data_kehadiran;
+	float nilai_UTS,nilai_tugas,nilai_tes_harian,nilai_UAS,nilai_ratarata;
+
+	cout<<"-----------daftar nilai mahasiwa informatika paramadina-----------";
+
+	cout<<"nama mahasiswa ";
+	getline(cin,nama_mahasiswa);
+	cout<<"data kehadiran";
+    cin>> data_kehadiran;
+	cout<<"Nilai UTS : ";
+	cin>>nilai_UTS;
+	cout<<"Nilai tugas : ";
+	cin>>nilai_tugas;
+	cout<<"Nilai tes harian: ";
+	cin>>nilai_tes_harian;
+	cout<<"Nilai UAS: ";
+	cin >> nilai_UAS;
+	cout<<endl;
+
+	nilai_ratarata=0.25*nilai_UTS+0.2*nilai_tugas+0.15*nilai_tes_harian+0.3*nilai_UAS+0.1*data_kehadiran;
+
+	cout <<"Nilai Rata-rata = "<<nilai_ratarata<<endl;
+}
